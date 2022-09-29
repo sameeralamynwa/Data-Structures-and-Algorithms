@@ -18,7 +18,6 @@ class Solution {
         List<Integer> kClosestElements = new ArrayList <>();
         int leftEnd = lowerBound(arr, x) - 1;
         int rightEnd = leftEnd + 1;
-        System.out.println(leftEnd + " " + rightEnd);
         while(kClosestElements.size() < k){
             if(rightEnd == arr.length || leftEnd >= 0 && x - arr[leftEnd] <= arr[rightEnd] - x){
                 kClosestElements.add(arr[leftEnd]);
