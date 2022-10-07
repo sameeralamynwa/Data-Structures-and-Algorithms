@@ -1,5 +1,3 @@
-import java.util.*;
-
 class Solution {
     public int solve(String a, String b, String c) {
         if(a == "" || b == "" || c == ""){
